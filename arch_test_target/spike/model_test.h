@@ -23,7 +23,7 @@
   li x1, 1;                                                                   \
   write_tohost:                                                               \
     sw x1, tohost, t1;                                                        \
-//  self_loop:  j self_loop;
+  self_loop:  j self_loop;
 
 #define RVMODEL_BOOT
 
