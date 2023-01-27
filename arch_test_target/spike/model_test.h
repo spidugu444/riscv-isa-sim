@@ -22,7 +22,8 @@
   addi x1, x1, 4; \
   li x1, 1;                                                                   \
   write_tohost:                                                               \
-    sw x1, tohost, t1;                                                        \
+    sw x1, tohost, t1;   
+  ecall
   self_loop:  j self_loop;
 
 #define RVMODEL_BOOT
